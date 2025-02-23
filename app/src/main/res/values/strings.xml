@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Instant Messages</string>
+    <string name="mi_nombre">Karen Bohorquez contreras</string>"
+    <string name="Texto_introductorio">Inicia una nueva aventura con Instant Messages y descubre una nueva forma de ver el mundo</string>
+    <string name="comienza">Comienza</string>
+    <string name="registro"> Registrate</string>
+    <string name="Texto_bienvenida_login">La aventura esta por iniciar, por favor inicia sesión</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="Recuperar_contraseña">Recupera Tu Contraseña</string>
+    <string name="No_tienes_cuenta">No tienes cuenta?</string>
+</resources>
