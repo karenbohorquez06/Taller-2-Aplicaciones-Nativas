@@ -6,143 +6,123 @@
     android:layout_height="match_parent"
     android:background="#C64CD5">
 
-    <!-- Campo de usuario -->
-
-    <!-- Campo de contraseña -->
-
-    <!-- Logo de la aplicación -->
-
-    <!-- Botón de inicio de sesión -->
-
-    <!-- Enlace para recuperar contraseña -->
-
     <RelativeLayout
         android:id="@+id/btn_google"
-        style="@style/RegistroGoogle"
-        android:layout_width="329dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="66dp"
-        android:layout_marginBottom="84dp"
+        style="@style/EditTextRounded"
+        android:layout_width="337dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:background="#fff"
-        android:padding="8dp"
+        android:padding="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_recuperar_contraseña">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857">
 
-        <!-- Icono de Google -->
+
         <ImageView
             android:id="@+id/img_google"
             android:layout_width="39dp"
             android:layout_height="38dp"
             android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginEnd="261dp"
+            android:layout_marginBottom="9dp"
             android:src="@drawable/logo_google" />
 
-        <!-- Botón de inicio de sesión con Google -->
         <Button
             android:id="@+id/btn_ingreso_google"
-            style="@style/RegistroGoogle"
-            android:layout_width="233dp"
-            android:layout_height="46dp"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="8dp"
-            android:layout_toEndOf="@id/img_google"
+            style="@style/EditTextRounded"
+            android:layout_width="279dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginEnd="-3dp"
             android:background="@android:color/transparent"
+            android:drawableStart="@drawable/logo_google"
             android:fontFamily="@font/alike_angular"
             android:gravity="center"
-            android:paddingStart="1dp"
-            android:paddingEnd="1dp"
             android:text="Ingresa con Google"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="@color/Negro"
-            android:textSize="16sp"
+            android:textSize="23dp"
             android:textStyle="bold" />
     </RelativeLayout>
 
     <EditText
         android:id="@+id/te_usuario"
         style="@style/EditTextRounded"
-        android:layout_width="271dp"
-        android:layout_height="54dp"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
         android:ems="10"
         android:inputType="text"
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintHorizontal_bias="0.824"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.335" />
 
     <ImageView
         android:id="@+id/img_logo_usu_contraseña"
-        android:layout_width="62dp"
-        android:layout_height="174dp"
+        android:layout_width="72dp"
+        android:layout_height="205dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375"
-        app:srcCompat="@drawable/___4_" />
-
-    <!-- Pregunta sobre cuenta existente -->
-
-    <!-- Enlace para registrarse -->
-
-    <!-- Nombre de la aplicación -->
-
-    <!-- Mensaje de bienvenida -->
-
-    <!-- Iconos decorativos -->
+        app:layout_constraintVertical_bias="0.373"
+        app:srcCompat="@drawable/icons" />
 
     <EditText
         android:id="@+id/te_contraseña"
         style="@style/EditTextRounded"
-        android:layout_width="272dp"
-        android:layout_height="55dp"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
         android:ems="10"
         android:inputType="textPassword"
         android:password="true"
         android:phoneNumber="false"
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintHorizontal_bias="0.824"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452" />
+        app:layout_constraintVertical_bias="0.454" />
 
-    <TextView
-        android:id="@+id/tv_recuperar_contraseña"
-        android:layout_width="237dp"
-        android:layout_height="25dp"
+    <Button
+        android:id="@+id/tv_instrutivo_recuperar"
+        style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
+        android:layout_width="245dp"
+        android:layout_height="54dp"
         android:fontFamily="@font/alike_angular"
         android:text="@string/Recuperar_contraseña"
         android:textAlignment="center"
         android:textColor="@color/Blanco"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.698" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_ingresar"
+        app:layout_constraintVertical_bias="0.099" />
 
     <TextView
         android:id="@+id/tv_no_tienes_cuenta"
         android:layout_width="155dp"
         android:layout_height="30dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="208dp"
         android:fontFamily="@font/alegreya"
         android:text="@string/No_tienes_cuenta"
@@ -150,12 +130,13 @@
         android:textColor="#fff"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_google" />
 
-    <TextView
+    <Button
         android:id="@+id/tv_registrate"
+        style="@android:style/Widget.Holo.Light.Button.Borderless.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
@@ -169,10 +150,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toEndOf="@+id/tv_no_tienes_cuenta"
         app:layout_constraintTop_toBottomOf="@+id/btn_google"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.272" />
 
     <TextView
         android:id="@+id/txtAppName"
@@ -182,25 +163,25 @@
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@color/Blanco"
-        android:textSize="29sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintHorizontal_bias="0.816"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.078" />
 
     <TextView
         android:id="@+id/tv_mensaje_bienvenida"
-        android:layout_width="270dp"
-        android:layout_height="58dp"
-        android:fontFamily="@font/alike_angular"
+        android:layout_width="340dp"
+        android:layout_height="79dp"
+        android:fontFamily="@font/amatic_sc"
         android:text="@string/Texto_bienvenida_login"
         android:textAlignment="center"
         android:textColor="@color/Blanco"
-        android:textSize="20sp"
-        android:textStyle="italic"
+        android:textSize="28sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.68"
@@ -211,20 +192,21 @@
     <Button
         android:id="@+id/btn_ingresar"
         style="@style/ButtonEdit"
-        android:layout_width="339dp"
-        android:layout_height="70dp"
+        android:layout_width="309dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="328dp"
+        android:backgroundTint="@color/Azul"
         android:fontFamily="@font/alike_angular"
         android:text="@string/ingresar"
-        android:textAlignment="center"
         android:textColor="@color/Blanco"
-        android:textSize="28sp"
-        app:iconPadding="2dp"
+        android:textSize="38sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintHorizontal_bias="0.435"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615"
         app:strokeWidth="2dp" />
 
     <ImageView
